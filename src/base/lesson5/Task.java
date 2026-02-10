@@ -15,18 +15,20 @@ public class Task {
         }
         return longestword;
     }
-    public String palindrome (String string){
+    public Boolean palindrome (String string){
         for (int i = 0; i < string.length(); i++) {
             Character c1 = string.charAt(i);
             Character c2 = string.charAt(string.length()-1-i);
+            c1 = Character.toUpperCase(c1);
+            c2 = Character.toUpperCase(c2);
             if (!c1.equals(c2)){
-                return "не палиндром";
+                return false;
             }
         }
-        return "палиндром";
+        return true;
     }
-    public String bword(String string){
-        return string.replaceAll("бяка","[вырезано цензурой]");
+    public String bword(String string, String regex, String replacement){
+        return string.replaceAll(regex,replacement);
     }
     public int isSubstring(String mainString, String substring){
         int counter = 0;

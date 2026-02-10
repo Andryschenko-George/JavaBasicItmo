@@ -13,9 +13,9 @@ public class Main {
         "was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more" +
         " recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."));
         //part2
-        System.out.println(task.palindrome("дед"));
+        System.out.println(task.palindrome("ДеД"));
         //part3
-        System.out.println(task.bword("бяка и бяка на крыше"));
+        System.out.println(task.bword("бяка и бяка на крыше", "бяка", "[вырезано цензурой]"));
         //part4
         System.out.println(task.isSubstring("What is Lorem Ipsum? Lorem123 Ipsum is simply dummy text of the printing" +
         " and typesetting123 industry.","Lorem"));
